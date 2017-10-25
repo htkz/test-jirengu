@@ -39,3 +39,5 @@ $(window).scroll(function() {
 
 **题目5：** 实现视频中的图片懒加载效果
 
+https://github.com/htkz/test-jirengu/tree/master/code/advance/task16
+
