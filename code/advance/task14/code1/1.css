@@ -1,0 +1,45 @@
+body {
+    position: relative;
+}
+
+span {
+    float: right;
+}
+
+.wraper {
+    width: 200px;
+    background: #C7171E;
+    color: white;
+    font-size: 15px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+    border-bottom: 1px dotted #999;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.content {
+    position: absolute;
+    left: 200px;
+    top: 0;
+    border: 1px solid grey;
+    width: 210px;
+    display: none;
+}
+
+a {
+    display: inline-block;
+    width: 80px;
+    text-decoration: none;
+    color: black;
+    padding: 3px 10px;
+}

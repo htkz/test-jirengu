@@ -1,0 +1,116 @@
+/*global*/
+
+body {
+    font-size: 12px;
+}
+
+.container {
+    padding: 10px 0;
+}
+
+/*nav*/
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid rgb(204, 204, 204);
+    border-bottom: none;
+    display: inline-block;
+    border-radius: 3px 3px 0 0;
+    float: left;
+
+}
+
+nav li a {
+    padding: 0 10px;
+    border-right: 1px solid rgb(204, 204, 204);
+    display: block;
+    /*font-size: 12px;*/
+}
+
+nav li:last-child a {
+    border-right: none;
+}
+
+li {
+    float: left;
+    padding: 8px 0;
+    color: #666;
+}
+
+li.active {
+    color: red;
+    background-color: rgb(204, 204, 204);
+}
+
+/*cards*/
+.cards {
+    border: 1px solid rgb(204, 204, 204);
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid rgb(238, 238, 238);
+    width: 178px;
+    height: 189px;
+    padding: 10px 20px;
+    position: relative;
+    text-align: center;
+}
+
+.card:nth-child(1) {
+    margin-bottom: 20px;
+}
+
+.cover {
+    position: absolute;
+    width: 219px;
+    height: 209px;
+    background: grey;
+    opacity: 0;
+    top: 0;
+    left: 0;
+}
+
+.prod-name {
+    color: rgb(102, 102, 102);
+    text-align: left;
+}
+
+.prod-price {
+    color: rgb(200, 22, 35);
+    text-align: left;
+}
+
+.cover.hover {
+    opacity: 0.75;
+}
+
+.cover.hover a  {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 8px;
+    border: 1px solid red;
+    border-radius: 3px;
+    color: rgb(200, 22, 35);
+}

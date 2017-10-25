@@ -1,0 +1,14 @@
+div.box1 {
+  margin: 100px;
+  width: 200px;
+  height: 200px;
+  background-image: url('http://7xpvnv.com2.z0.glb.qiniucdn.com/f754722e-f087-4014-9711-15a36bb3ac0b');
+}
+
+div.box1:hover {
+  margin: 100px;
+  width: 200px;
+  height: 200px;
+  background-image: url('http://7xpvnv.com2.z0.glb.qiniucdn.com/f754722e-f087-4014-9711-15a36bb3ac0b');
+  background-position: 0 -200px;
+}

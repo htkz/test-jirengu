@@ -1,0 +1,41 @@
+.container {
+    width: 500px;
+    margin: 15px auto;
+}
+.commen {
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+
+a:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.steal {
+    background: #159588;
+    color: white;
+}
+
+.yellow {
+    background: #ffe94e;
+    color: black;
+}
+
+.orange {
+    background: #ed9727;
+    color: black;
+}
+
+.red {
+    background: #f2453e;
+    color: white;
+}
+
+.green {
+    background: #50ad55;
+    color: white;
+}

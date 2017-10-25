@@ -1,0 +1,64 @@
+.container {
+    border: 1px solid;
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+}
+.tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.tab {
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    width: 33.3%;
+    text-align: center;
+    cursor: pointer;
+}
+.tab:last-child {
+    border-right: none;
+}
+
+.panels {
+    /*left: 30px;*/
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+
+
+}
+
+.wraper {
+    /*border: 1px solid blue;*/
+    width: 1300px;
+    height: 200px;
+    position: absolute;
+}
+
+.panel {
+    /*display: none;*/
+    width: 300px;
+    height: 177px;
+    float: left;
+}
+
+.panel:nth-child(1) {
+    background-color: red;
+}
+
+.panel:nth-child(2) {
+    background-color: yellow;
+}
+
+.panel:nth-child(3) {
+    background-color: blue;
+}
+
+.active {
+    display: inline-block;
+}
+.select {
+    background: #ccc;
+}

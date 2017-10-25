@@ -1,0 +1,29 @@
+.commen {
+    padding: 20px 16px;
+    margin: 30px auto;
+    width: 600px;
+    box-sizing: border-box;
+}
+
+.first {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.second {
+  background-color: #ffe7e7;
+  border-left:7px solid #f2453e;
+  border-right:7px solid #f2453e;
+}
+
+.third {
+  background-color: #ffffd9;
+  border-top:7px solid #ffe94e;
+  border-bottom:7px solid #ffe94e;
+}
+
+.last {
+  background-color: #e8ffe8;
+  border: 1px solid #50ad55;
+  border-bottom: 7px solid #50ad55;
+}

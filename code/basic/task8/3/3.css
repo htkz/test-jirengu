@@ -1,0 +1,24 @@
+table {
+    border-collapse: collapse;
+    width: 600px;
+    margin: 30px auto;
+    border: 1px solid #dddddd;
+}
+
+.table1 > table tr:first-child {
+    color: white;
+    background: #50ad55;
+}
+
+th, td {
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.table2 table {
+    border:none;
+}

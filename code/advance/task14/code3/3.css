@@ -1,0 +1,86 @@
+body {
+    color: rgb(102, 102, 102);
+    font-size: 12px;
+}
+
+header {
+    font-size: 25px;
+    text-align: left;
+    margin-left: 50px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.wraper {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.cards {
+    text-align: center;
+
+}
+
+.cards-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    border: 1px solid rgb(238, 238, 238);
+    margin: 10px;
+    padding: 10px 20px;
+    position: relative;
+    width: 178px;
+    height: 189px;
+}
+
+.prod-name,
+.prod-price {
+    text-align: left;
+}
+
+.prod-price {
+    color: rgb(200, 22, 35);
+}
+
+.cover {
+    opacity: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #b2b2b2;
+}
+
+.cover a {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(200, 22, 35);
+    padding: 10px;
+    color: rgb(200, 22, 35);
+    background-color: white;
+    border-radius: 3px;
+    opacity: 1;
+}
+
+.cover.hover {
+    opacity: .8;
+}
+
+.wraper > a.btn {
+    color: rgb(200, 22, 35);
+    border: 1px solid rgb(200, 22, 35);
+    text-align: left;
+    margin-left: 50px;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 3px;
+}

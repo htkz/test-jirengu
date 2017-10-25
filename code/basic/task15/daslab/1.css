@@ -1,0 +1,385 @@
+body {
+  margin: 0;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.welcome-background {
+  height: 95vh;
+  width: 100vv;
+  background-image: url('http://daslab.seas.harvard.edu/images/header_bg.jpg');
+  background-size: cover;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+/* center intro and header */
+.intro,
+.header {
+  width: 80%;
+  /*border: 1px solid;*/
+  margin: 0 auto;
+}
+
+/* header */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-right li {
+  list-style-type: none;
+  display: inline;
+}
+
+.navbar-brand {
+  position: relative;
+}
+
+.navbar-brand .logo {
+  width: 160px;
+  /*width: 100%;*/
+  /*border: 1px solid;*/
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+}
+
+.navbar-brand,
+.navbar-right {
+  /*border: 1px solid;*/
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navbar-right li {
+  color: white;
+  margin: 0 10px;
+  font-size: 14px;
+  cursor: pointer;
+  padding-bottom: 2px;
+}
+
+.navbar-right li:hover {
+  border-bottom: 2px solid red;
+}
+
+/* intro */
+.intro {
+  text-align: center;
+  height: 600px;
+}
+
+.intro .big-logo {
+  margin-top: 16%;
+}
+
+.intro-text {
+  font-size: 40px;
+  font-style: italic;
+  color: white;
+  margin: 70px 0;
+}
+
+.intro .button-more {
+  border: 1px solid #cf1b1b;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 20px 40px;
+  font-size: 18px;
+  font-weight: 700;
+  display: inline-block;
+  margin: 40px 0;
+}
+
+.intro .button-more:hover {
+  background: rgba(238, 0, 0, 0.32);
+}
+
+.tweets {
+  background-color: black;
+  height: 5vh;
+}
+
+.tweets .content {
+  width: 80%;
+  /*border: 1px solid blue;*/
+  margin: 0 auto;
+  color: white;
+  padding: 10px 0;
+}
+
+.tweets i {
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+.tweets span {
+  font-size: 14px;
+}
+
+.research {
+  height: 55vh;
+}
+
+.research .content {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.research h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.research .subheading {
+  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: italic;
+  color: #777;
+  margin-top: 10px;
+}
+
+.research p {
+  /*border: 1px solid;*/
+  font-size: 20px;
+  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #333;
+  display: inline-block;
+  width: 80%;
+}
+
+span.text-link {
+  cursor: pointer;
+  color: #f42f2f;
+}
+
+.research .text-link:hover {
+  opacity: 0.8;
+}
+
+
+.research .icons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  cursor: pointer;
+}
+/*.research .icons .icon p:hover,*/
+.research .icons .icon:hover {
+  color: #d32222;
+}
+
+.research .icons p {
+  color: #d32222;
+}
+
+/* projects */
+.projects {
+  height: 90vh;
+  background: #DFE0DF;
+  text-align: center;
+}
+
+.projects .content {
+  width: 80%;
+  margin: 0 auto;
+  border: 40px solid transparent;
+}
+
+.projects h2 {
+  font-size: 40px;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  /*margin-top: 70px;*/
+}
+
+.projects .content p {
+  display: inline-block;
+  width: 80%;
+  font-size: 20px;
+  /*padding: 10px 40px;*/
+  /*margin: 0 30px; */
+}
+
+.projects .imgicons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 40px 0;
+}
+
+.imgicons img {
+  display: inline-block;
+  width: 25%;
+  height: 25%;
+}
+
+.logo-links {
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+}
+
+.logo-links .logo-seas {
+  display: inline-block;
+  height: 90%;
+  width: 19%;
+  background-image: url('http://daslab.seas.harvard.edu/images/seas_logo.png');
+  background-repeat: no-repeat;
+  /*border: 1px solid;*/
+  background-size: cover;
+  margin: 0 70px;
+  cursor: pointer;
+}
+
+.logo-links .logo-harvard:hover,
+.logo-links .logo-seas:hover {
+  background-position: bottom;
+}
+
+.logo-links .logo-harvard {
+  display: inline-block;
+  height: 90%;
+  width: 21%;
+  background-image: url('http://daslab.seas.harvard.edu/images/harvard_logo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*border: 1px solid;*/
+  margin: 0 70px;
+  cursor: pointer;
+}
+
+.joinus {
+  width: 100%;
+  height: 40vh;
+  background: url('http://daslab.seas.harvard.edu/images/veritas.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.joinus .content::before {
+  display: block;
+  content: "";
+  margin-top: 80px;
+}
+
+.joinus .content {
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid transparent;
+  text-align: center;
+}
+
+.joinus h2 {
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+.joinus p {
+  font-size: 20px;
+}
+
+.red-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 16px;
+  font-size: 18px;
+  background-image: linear-gradient(to bottom, #d9534f 0%, #c12e2a 100%);
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.red-button:hover {
+  background: #c12e2a;
+}
+
+
+.publication .content {
+  /*border: 1px solid;*/
+  width: 80%;
+  margin: 40px auto;
+  text-align: center;
+  /*margin-bo: 40px;*/
+}
+
+.publication p {
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.publication span {
+  color: #f42f2f;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.publication span:hover {
+  opacity: 0.75;
+}
+
+.paperblog {
+  background: #DFE0DF;
+  height: 65vh;
+}
+
+.paperblog .content {
+  border: 1px solid transparent;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+
+.paperblog .cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.paperblog img {
+  height: 170px;
+  width: auto;
+}
+
+.paperblog .card {
+  width: 600px;
+  height: 270px;
+  display: inline-block;
+  box-shadow: 7px 6px 10px rgba(0,0,0,0.3);
+  /*border: 1px solid;*/
+  margin: 0 10px;
+  background: #F0F1F0;
+  padding-top: 20px;
+
+}
+
+.paperblog h4 {
+  background: white;
+  display: block;
+  height: 54px;
+  /*border: 1px solid;*/
+  color: rgb(247, 47, 47);
+  padding: 10px;
+}
+
+
+.footer {
+  height: 5vh;
+  background: #f4f4f4;
+  text-align: center;
+  padding: 10px;
+}

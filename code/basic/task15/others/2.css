@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bolder;
+  margin: 15px;
+}
+
+h4,
+h6,
+p{
+  margin: 10px;
+}
+
+p {
+  font-size: 14px;
+  color: #777;
+}
+
+.sub-header {
+  font-style: italic;
+  color: #666;
+}
+
+.timeline {
+  /*border: 1px solid black;*/
+  text-align: center;
+  padding-bottom: 140px;
+}
+
+.timeline::before {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  width: 2px;
+  /*background: #f1f1f1;*/
+  background: #f1f1f1;
+  height: 1100px;
+  /*z-index: 10;*/
+  top: 200px;
+}
+
+.item {
+  /*border: 1px solid;*/
+  position: relative;
+  padding: 50px 0;
+}
+
+.item::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.timeline .img {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  right: 50%;
+  /*top: 50%;*/
+  transform: translate(50%, 0);
+}
+
+.timeline img {
+  width: 150px;
+  height: auto;
+  border: 7px solid #f1f1f1;
+  border-radius: 100%;
+}
+
+.timeline .item:last-child .img {
+  border: 7px solid #f1f1f1;
+}
+
+.text {
+  /*border: 1px solid;*/
+  display: inline-block;
+  width: 35%;
+  text-align: right;
+  /*position: absolute;*/
+  float: left;
+  margin-left: 5%;
+}
+
+.item:nth-of-type(even) .text {
+  float: right;
+  text-align: left;
+  margin-right: 5%;
+}
+
+.item:nth-of-type(even) .img {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.item:last-child .img {
+  background: #fed136;
+  border-radius: 100%;
+}
+
+.item:last-child h3 {
+  color: white;
+  /*display: inline-block;*/
+  margin-top: 40px;
+  /*border: 1px solid;*/
+}
+
+.contact {
+  height: 100vh;
+  background-image: url('http://www.electrogarden.com/music/egn/skins/ProJam_Dark/images/world_map_black.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding-top: 40px;
+}
+
+.contact h2 {
+  padding-top: 10%;
+}
+
+.form-control {
+  padding: 20px;
+  display: block;
+  width: 80%;
+  font-size: 14px;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 25px;
+  margin: 25px auto;
+}
+
+form {
+  /*border: 1px solid;*/
+  padding-top: 60px;
+}
+
+
+form.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+
+.input-left {
+  /*border: 1px solid;*/
+  width: 600px;
+  margin-left: 130px;
+}
+
+.input-right {
+  /*border: 1px solid;*/
+  width: 600px;
+  margin-right: 130px;
+}
+
+.send-button {
+  display: inline-block;
+  color: white;
+  padding: 20px 40px;
+  border-radius: 5px;
+  background: #fed136;
+  margin-top: 40px;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #fec503;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.portfolio {
+  text-align: center;
+  background: #F6F7F6;
+  padding: 40px;
+}
+.portfolio .cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.portfolio .card {
+  width: 350px;
+  /*border: 1px solid;*/
+  margin: 20px 20px;
+  background: white;
+  position: relative;
+}
+
+.portfolio img {
+  width: 350px;
+  height: auto;
+}
+
+.yellow-layer {
+  width: 350px;
+  height: 253px;
+  background: rgba(254, 209, 54, .9);
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+}
+
+.yellow-layer:hover {
+  opacity: 0.75;
+}
+
+.yellow-layer:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.yellow-layer i {
+  display: inline-block;
+  /*border: 1px solid;*/
+  vertical-align: middle;
+  font-size: 40px;
+  color: white;
+  /*position: absolute;*/
+}
