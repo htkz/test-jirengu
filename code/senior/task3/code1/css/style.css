@@ -1,0 +1,30 @@
+.container {
+    border: 1px solid;
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+}
+.tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.tab {
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    width: 33.3%;
+    text-align: center;
+    cursor: pointer;
+}
+.tab:last-child {
+    border-right: none;
+}
+.panel {
+    display: none;
+}
+.active {
+    display: block;
+}
+.select {
+    background: #ccc;
+}
