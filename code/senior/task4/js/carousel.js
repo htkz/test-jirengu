@@ -73,13 +73,13 @@ Carousel.prototype.playNext = function(_this) {
     })
 }
 
-Carousel.prototype.locatePic = function(_this, index) {
+Carousel.prototype.locatePic = function(_this) {
     if(_this.isPlaying(_this)) {
         return;
     }
     _this.addPlayLock(_this);
+    var index = $(_this).index();
     var offset = (index - _this.curIndex);
-    console.log(this);
     var absOffset = Math.abs(offset);
     var distance = Math.abs(offset  * _this.imgWidth);
     if(offset > 0) {
@@ -107,10 +107,9 @@ Carousel.prototype.bind = function() {
     });
     this.$bullet.children().each(function(index, el) {
         $(el).click(function() {
-            _this.locatePic(_this, index);
+            _this.locatePic(_this);
         });
     });
 }
 
-var couseral1 = new Carousel($('.carousel').first());
-var couseral2 = new Carousel($('.carousel').last());
+var couseral1 = new Carousel($('.carousel'));
