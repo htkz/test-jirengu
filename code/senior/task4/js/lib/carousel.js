@@ -73,12 +73,11 @@ Carousel.prototype.playNext = function(_this) {
     })
 }
 
-Carousel.prototype.locatePic = function(_this) {
+Carousel.prototype.locatePic = function(_this, index) {
     if(_this.isPlaying(_this)) {
         return;
     }
     _this.addPlayLock(_this);
-    var index = $(_this).index();
     var offset = (index - _this.curIndex);
     var absOffset = Math.abs(offset);
     var distance = Math.abs(offset  * _this.imgWidth);
@@ -99,17 +98,25 @@ Carousel.prototype.locatePic = function(_this) {
 
 Carousel.prototype.bind = function() {
     var _this = this;
-    this.$prev.click(function() {
+    this.$prev.click(function(event) {
+        event.preventDefault();
         _this.playPrev(_this);
     });
-    this.$next.click(function() {
+    this.$next.click(function(event) {
+        event.preventDefault();
         _this.playNext(_this);
     });
     this.$bullet.children().each(function(index, el) {
-        $(el).click(function() {
-            _this.locatePic(_this);
+        $(el).click(function(event) {
+            event.preventDefault();
+            _this.locatePic(_this, index);
         });
     });
 }
 
-var couseral1 = new Carousel($('.carousel'));
+
+define(function (){
+    return {
+        Carousel: Carousel
+    }
+});

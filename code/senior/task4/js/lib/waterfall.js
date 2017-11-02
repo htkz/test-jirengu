@@ -2,7 +2,7 @@ waterFull = function() {
     var curHeight = [];
     var $items = $('.item');
     var itemWidth = $items.width()
-    var colNum = parseInt($('.content').width() / (itemWidth));
+    var colNum = parseInt($('.images').width() / (itemWidth));
     for (var i = 0; i < colNum; i++) {
         curHeight.push(0);
     }
@@ -19,8 +19,8 @@ waterFull = function() {
         $(el).css('top', minHeight);
         curHeight[index] += $(this).outerHeight(true);
     });
-
-
+    var maxHeight = Math.max.apply(null, curHeight)
+    $('.images').css('height', maxHeight);
 }
 
 var WaterFull = (function() {
@@ -32,3 +32,9 @@ var WaterFull = (function() {
         init: waterFull
     }
 })()
+
+define(function (){
+    return {
+        WaterFull: WaterFull
+    }
+});
