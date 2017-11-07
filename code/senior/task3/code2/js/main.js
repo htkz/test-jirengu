@@ -79,7 +79,6 @@ Carousel.prototype.locatePic = function(_this, index) {
     }
     _this.addPlayLock(_this);
     var offset = (index - _this.curIndex);
-    console.log(this);
     var absOffset = Math.abs(offset);
     var distance = Math.abs(offset  * _this.imgWidth);
     if(offset > 0) {
