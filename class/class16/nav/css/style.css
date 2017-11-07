@@ -35,11 +35,11 @@ span.edit:hover {
 }
 
 span.btn {
-    width: 22px;
+    /*width: 22px;*/
     border: 1px solid red;
     display: inline-block;
     text-align: center;
-    padding: 10px;
+    padding: 10px 16;
     position: relative;
     margin: 0 2px;
 }
