@@ -9,6 +9,7 @@
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: #61727B;
 }
 
 .container .row {
@@ -36,12 +37,13 @@ span.edit:hover {
 
 span.btn {
     /*width: 22px;*/
-    border: 1px solid red;
+    border: 1px solid #BECCD3;
     display: inline-block;
     text-align: center;
     padding: 10px 16;
     position: relative;
     margin: 0 2px;
+    color: white;
 }
 
 span.btn img {
@@ -51,3 +53,28 @@ span.btn img {
     left: 0;
     bottom: 0;
 }
+
+.row:nth-child(1) span {
+    background-color: #758993;
+}
+
+.row:nth-child(2) span {
+    background-color: #9DB1BB;
+}
+
+
+.row:nth-child(3) span {
+    background-color: #B4C3CB;
+}
+
+.row:nth-child(4) span {
+    background-color: #E1E3E4;
+}
+
+/*.row span {
+    background-color: #1F1F1F;
+}
+
+.container {
+    background-color: #2C2C2E;
+}*/
