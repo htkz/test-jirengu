@@ -25,7 +25,7 @@ for (var i = 0; i < line.length; i++) {
     var lineRow = line[i];
     var $row = $('<div class="row"></div>');
     for (var j = 0; j < lineRow.length; j++) {
-        var item = lineRow[j];
+        var item = lineRow[j].toUpperCase();
         var ico = getIco(hash_url[item]);
         var $span = $(`<span class="btn">${item}<span class="edit">E</span></span>`);
         var $img = $(`<img src="${ico}" alt="">`);
