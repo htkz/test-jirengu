@@ -2,6 +2,8 @@ getIco = function(url) {
     return url + '/favicon.ico';
 }
 
+var lock = false;
+
 var line1 = ['1','2','3','4','5','6','7','8','9','0'];
 var line2 = ['q','w','e','r','t','y','u','i','o','p'];
 var line3 = ['a','s','d','f','g','h','j','k','l'];
@@ -53,17 +55,19 @@ $('span.btn').each(function(index, el) {
 $(document).keypress(function(event) {
     var key = event.key;
     var url = hash_url[key];
-    if(url) {
+    if(url && !lock) {
         window.open(url,'_blank');
     }
 });
 
 // set edit function
 $('span.edit').click(function(event) {
+    event.stopPropagation();
     getInput(this);
 });
 
 getInput = function(_this) {
+    lock = true;
     swal({
         title: "Url!",
         text: "Plesse input your url:",
@@ -87,13 +91,14 @@ getInput = function(_this) {
         var item = $(_this).parent().text().charAt(0);
         $(_this).siblings('img').attr('src', ico);
         hash_url[item] = url;
-        localStorage.setItem('cache_url', JSON.stringify(hash_url))
+        localStorage.setItem('cache_url', JSON.stringify(hash_url));
+        lock = false;
         swal({
             title: "Nice!",
             // text: "New label: " + inputValue,
             type: "success",
             timer: 1,
             showConfirmButton: false,
-          });
+        });
     })
 }

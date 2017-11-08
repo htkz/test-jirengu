@@ -107,6 +107,16 @@ body {
     span.btn {
         padding: 4px 8px;
     }
+    span.edit {
+        width: 5px;
+        height: 5px;
+        line-height: 5px;
+        font-size: 5px;
+    }
+    span img {
+        width: 5px;
+        height: 5px;
+    }
 
 }
 
@@ -117,6 +127,16 @@ body {
     }
     span.btn {
         padding: 5px 8px;
+    }
+    span.edit {
+        width: 5px;
+        height: 5px;
+        line-height: 5px;
+        font-size: 5px;
+    }
+    span img {
+        width: 5px;
+        height: 5px;
     }
 
 }
