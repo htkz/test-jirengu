@@ -43,6 +43,7 @@ span.btn {
     position: relative;
     margin: 0 2px;
     color: white;
+    user-select: none;
 }
 
 span.btn img {
