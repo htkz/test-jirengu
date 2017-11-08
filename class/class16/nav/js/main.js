@@ -16,10 +16,11 @@ var hash_url = {
 }
 
 // check localStorage
-var hashInLocalStorage = JSON.parse(localStorage.getItem('cache_url') || 'null')
-if(hashInLocalStorage){
-	hash_url = hashInLocalStorage
-}
+localStorage.clear();
+// var hashInLocalStorage = JSON.parse(localStorage.getItem('cache_url') || 'null')
+// if(hashInLocalStorage){
+// 	hash_url = hashInLocalStorage
+// }
 
 
 // add item to screen
@@ -28,7 +29,7 @@ for (var i = 0; i < line.length; i++) {
     var $row = $('<div class="row"></div>');
     for (var j = 0; j < lineRow.length; j++) {
         var item = lineRow[j].toUpperCase();
-        var ico = getIco(hash_url[item]);
+        var ico = getIco(hash_url[item.toLowerCase()]);
         var $span = $(`<span class="btn">${item}<span class="edit">E</span></span>`);
         var $img = $(`<img src="${ico}" alt="">`);
         $img.appendTo($span);
@@ -54,7 +55,8 @@ $('span.btn').each(function(index, el) {
 // set keydown event
 $(document).keypress(function(event) {
     var key = event.key;
-    var url = hash_url[key];
+    console.log(key);
+    var url = hash_url[key.toUpperCase()];
     if(url && !lock) {
         window.open(url,'_blank');
     }
