@@ -16,11 +16,10 @@ var hash_url = {
 }
 
 // check localStorage
-localStorage.clear();
-// var hashInLocalStorage = JSON.parse(localStorage.getItem('cache_url') || 'null')
-// if(hashInLocalStorage){
-// 	hash_url = hashInLocalStorage
-// }
+var hashInLocalStorage = JSON.parse(localStorage.getItem('cache_url') || 'null')
+if(hashInLocalStorage){
+	hash_url = hashInLocalStorage
+}
 
 
 // add item to screen
