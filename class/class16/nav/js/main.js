@@ -27,9 +27,9 @@ for (var i = 0; i < line.length; i++) {
     var lineRow = line[i];
     var $row = $('<div class="row"></div>');
     for (var j = 0; j < lineRow.length; j++) {
-        var item = lineRow[j].toUpperCase();
-        var ico = getIco(hash_url[item.toLowerCase()]);
-        var $span = $(`<span class="btn">${item}<span class="edit">E</span></span>`);
+        var item = lineRow[j];
+        var ico = getIco(hash_url[item]);
+        var $span = $(`<span class="btn">${item.toUpperCase()}<span class="edit">E</span></span>`);
         var $img = $(`<img src="${ico}" alt="">`);
         $img.appendTo($span);
         $span.appendTo($row);
@@ -54,7 +54,7 @@ $('span.btn').each(function(index, el) {
 // set keydown event
 $(document).keypress(function(event) {
     var key = event.key;
-    var url = hash_url[key.toUpperCase()];
+    var url = hash_url[key];
     if(url && !lock) {
         window.open(url,'_blank');
     }
@@ -88,7 +88,7 @@ getInput = function(_this) {
             var url = inputValue;
         }
         var ico = url+'/favicon.ico';
-        var item = $(_this).parent().text().charAt(0);
+        var item = $(_this).parent().text().charAt(0).toLowerCase();
         $(_this).siblings('img').attr('src', ico);
         hash_url[item] = url;
         localStorage.setItem('cache_url', JSON.stringify(hash_url));
