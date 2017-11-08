@@ -54,7 +54,6 @@ $('span.btn').each(function(index, el) {
 // set keydown event
 $(document).keypress(function(event) {
     var key = event.key;
-    console.log(key);
     var url = hash_url[key.toUpperCase()];
     if(url && !lock) {
         window.open(url,'_blank');
