@@ -39,6 +39,7 @@ for (var i = 0; i < line.length; i++) {
             var $img = $(`<img src="${ico}" alt="" style="display:none;">`);
         }
         $img.appendTo($span);
+        $img.css('border', 'none');
         $span.appendTo($row);
     }
     $row.appendTo($('.container'));
@@ -96,8 +97,7 @@ getInput = function(_this) {
         }
         var ico = url+'/favicon.ico';
         var item = $(_this).parent().text().charAt(0).toLowerCase();
-        $(_this).siblings('img').attr('src', ico);
-        $(_this).siblings('img').show();
+        $(_this).siblings('img').attr('src', ico).show();;
 
         hash_url[item] = url;
         localStorage.setItem('cache_url', JSON.stringify(hash_url));

@@ -54,13 +54,16 @@ span.btn img {
     bottom: 0;
 }
 
-img[src=""],
 img[src="no-ico"] {
     opacity: 0;
     border: none;
     display: none;
 }
 
+img {
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
 /*green theme*/
 
 /*.row:nth-child(1) span {
