@@ -57,6 +57,8 @@ span.btn img {
 img[src=""],
 img[src="no-ico"] {
     opacity: 0;
+    border: none;
+    display: none;
 }
 
 /*green theme*/
