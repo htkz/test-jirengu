@@ -2,7 +2,7 @@ getIco = function(url) {
     if(url) {
         return url + '/favicon.ico';
     }
-    return undefined;
+    return "no-ico";
 }
 
 var lock = false;

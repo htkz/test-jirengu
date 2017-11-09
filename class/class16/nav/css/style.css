@@ -54,6 +54,11 @@ span.btn img {
     bottom: 0;
 }
 
+img[src=""],
+img[src="no-ico"] {
+    opacity: 0;
+}
+
 /*green theme*/
 
 /*.row:nth-child(1) span {
