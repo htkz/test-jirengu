@@ -1,5 +1,8 @@
 getIco = function(url) {
-    return url + '/favicon.ico';
+    if(url) {
+        return url + '/favicon.ico';
+    }
+    return undefined;
 }
 
 var lock = false;
@@ -30,7 +33,11 @@ for (var i = 0; i < line.length; i++) {
         var item = lineRow[j];
         var ico = getIco(hash_url[item]);
         var $span = $(`<span class="btn">${item.toUpperCase()}<span class="edit">E</span></span>`);
-        var $img = $(`<img src="${ico}" alt="">`);
+        if(ico) {
+            var $img = $(`<img src="${ico}" alt="">`);
+        } else {
+            var $img = $(`<img src="${ico}" alt="" style="display:none;">`);
+        }
         $img.appendTo($span);
         $span.appendTo($row);
     }
@@ -90,6 +97,8 @@ getInput = function(_this) {
         var ico = url+'/favicon.ico';
         var item = $(_this).parent().text().charAt(0).toLowerCase();
         $(_this).siblings('img').attr('src', ico);
+        $(_this).siblings('img').show();
+
         hash_url[item] = url;
         localStorage.setItem('cache_url', JSON.stringify(hash_url));
         lock = false;
