@@ -14,8 +14,8 @@ var line4 = ['z','x','c','v','b','n','m'];
 var line = [line1, line2, line3, line4];
 
 var hash_url = {
-    w: 'http://weibo.com',
-    q: 'http://qq.com'
+    w: 'https://weibo.com',
+    q: 'https://qq.com'
 }
 
 // check localStorage
