@@ -91,15 +91,15 @@ getInput = function(_this) {
             return false;
         }
         if(inputValue.indexOf('http') === -1) {
-            var url = `http://${inputValue}`;
+            var url = `https://${inputValue}`;
         } else {
             var url = inputValue;
         }
         var ico = url+'/favicon.ico';
         var item = $(_this).parent().text().charAt(0).toLowerCase();
-        $(_this).siblings('img').attr('src', ico).show();;
+        $(_this).siblings('img').attr('src', ico).show();
         $(_this).siblings('img').on('error',function(event) {
-            $(this).attr('src', 'http://i.loli.net/2017/11/10/5a05afbc5e183.png');
+            $(this).attr('src', 'https://i.loli.net/2017/11/10/5a05afbc5e183.png');
         });
         hash_url[item] = url;
         localStorage.setItem('cache_url', JSON.stringify(hash_url));
