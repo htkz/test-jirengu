@@ -100,7 +100,7 @@ getInput = function(_this) {
         $(_this).siblings('img').attr('src', ico).show();;
         $(_this).siblings('img').on('error',function(event) {
             console.log('123');
-            $(this).attr('src', '//i.loli.net/2017/11/10/5a05afbc5e183.png');
+            $(this).attr('src', 'http://i.loli.net/2017/11/10/5a05afbc5e183.png');
         });
         hash_url[item] = url;
         localStorage.setItem('cache_url', JSON.stringify(hash_url));
