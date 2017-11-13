@@ -99,7 +99,6 @@ getInput = function(_this) {
         var item = $(_this).parent().text().charAt(0).toLowerCase();
         $(_this).siblings('img').attr('src', ico).show();;
         $(_this).siblings('img').on('error',function(event) {
-            // event.preventDefault();
             $(this).attr('src', '//i.loli.net/2017/11/10/5a05afbc5e183.png');
         });
         hash_url[item] = url;
