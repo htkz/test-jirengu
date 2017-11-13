@@ -14,8 +14,8 @@ var line4 = ['z','x','c','v','b','n','m'];
 var line = [line1, line2, line3, line4];
 
 var hash_url = {
-    w: 'https://weibo.com',
-    q: 'https://qq.com'
+    w: 'http://weibo.com',
+    q: 'http://qq.com'
 }
 
 // check localStorage
@@ -91,7 +91,7 @@ getInput = function(_this) {
             return false;
         }
         if(inputValue.indexOf('http') === -1) {
-            var url = `https://${inputValue}`;
+            var url = `http://${inputValue}`;
         } else {
             var url = inputValue;
         }
@@ -99,7 +99,7 @@ getInput = function(_this) {
         var item = $(_this).parent().text().charAt(0).toLowerCase();
         $(_this).siblings('img').attr('src', ico).show();
         $(_this).siblings('img').on('error',function(event) {
-            $(this).attr('src', 'https://i.loli.net/2017/11/10/5a05afbc5e183.png');
+            $(this).attr('src', 'http://i.loli.net/2017/11/10/5a05afbc5e183.png');
         });
         hash_url[item] = url;
         localStorage.setItem('cache_url', JSON.stringify(hash_url));
