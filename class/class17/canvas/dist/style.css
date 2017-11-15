@@ -9,13 +9,12 @@ body, html {
 .container {
     width: 100vw;
     height: 100vh;
-    /*border: 1px solid;*/
     margin: 0 auto;
     background: #342420;
 
 }
 
-footer {
+header {
     width: 100vw;
     height: 40px;
     display: flex;
