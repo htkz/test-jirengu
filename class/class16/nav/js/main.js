@@ -106,7 +106,6 @@ getInput = function(_this) {
         lock = false;
         swal({
             title: "Nice!",
-            // text: "New label: " + inputValue,
             type: "success",
             timer: 1,
             showConfirmButton: false,
