@@ -74,6 +74,9 @@ bindEvent = function() {
                 break;
             case  'eraser':
                 $('html').addClass('eraser');
+                break;
+            case 'clear':
+                ctx.clearRect(0, 0, 2000, 2000);
             default:
             return false;
         }
@@ -91,6 +94,3 @@ bindEvent = function() {
 initCanvas();
 bindEvent();
 resize();
-
-// var color = $('input[type=color]')
-// console.log(color.val());
