@@ -1,0 +1,73 @@
+body, html {
+    margin: 0;
+}
+
+.eraser {
+    cursor: url(../img/eraser.cur), auto;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    background: #342420;
+
+}
+
+header {
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    align-items: center;
+
+    background: #3B3B47;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+}
+
+.options {
+    margin-right: 20px;
+}
+
+.option {
+    display: inline-block;
+    padding: 5px 12px;
+    cursor: pointer;
+    color: #5C959C;
+    background: #42424E;
+    border-radius: 2px;
+    font-size: 13px;
+    border: 1px solid #666;
+}
+
+.option:hover {
+    opacity: 0.7;
+}
+
+.option.selected {
+    background-color: #3B3B47;
+    border: 1px solid #fff;
+}
+
+.toolBar {
+    float: right;
+    color: white;
+    margin-left: 10px;
+}
+
+canvas {
+    background: #999;
+}
+
+.color {
+    display: inline-block;
+    padding: 3px;
+    /*border: 1px solid #666;*/
+}
+
+.eraser-size {
+    display: inline-block;
+    padding: 4px;
+    /*border: 1px solid #666;*/
+}
