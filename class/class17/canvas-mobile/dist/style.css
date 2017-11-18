@@ -1,4 +1,4 @@
-* {
+f* {
     margin: 0;
     padding: 0;
 }
@@ -11,7 +11,7 @@
 }
 
 header {
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #ccc;
     height: 40px;
     display: flex;
     justify-content: space-between;
