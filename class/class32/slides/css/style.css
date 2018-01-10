@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.gallery {
+    width: 920px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ccc;
+    overflow: hidden;
+    box-shadow: 0 0 3px #AAAAAA;
+}
+
+.gallery .slides {
+    display: flex;
+    margin-left: -920px;
+    /*transition: all 1s;*/
+}
+
+.gallery .slides .slide{
+    width: 3680px;
+    height: 400px;
+}
+
+.bottomNav {
+    height: 50px;
+    background-color: #EEEEEE;
+    box-shadow: 0 0 3px #AAAAAA;
+    display: flex;
+    justify-content: center;
+}
+
+.bottomNav .pages {
+    display: flex;
+}
+
+.bottomNav .pages .page,
+.bottomNav .prevbtn,
+.bottomNav .nextbtn {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.bottomNav .pages .page:hover,
+.bottomNav .prevbtn:hover,
+.bottomNav .nextbtn:hover {
+    color: red;
+}
