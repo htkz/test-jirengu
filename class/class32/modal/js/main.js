@@ -1,15 +1,15 @@
 const modal = $('.modal');
 const btn = $('#btn');
 
-btn.click(function(event) {
+btn.on('click', function(event) {
     event.stopPropagation();
-    modal.show();
+    modal.toggle();
+    $(document).on('click', function(event) {
+        modal.hide();
+    });
+
 });
 
 modal.click(function(event) {
     event.stopPropagation();
-});
-
-$(document).click(function(event) {
-    modal.hide();
 });
