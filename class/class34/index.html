@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <h5>余额<span id="amount"></span></h5>
+        <button type="button" id="button">打钱</button>
+        <script type="text/javascript">
+            window.payMoney = function(res, data) {
+                if(res === 'success') {
+                    amount.innerText = data;
+                } else {
+                    alert('操作失误!');
+                }
+            }
+            window.initMoney = function(res, data) {
+                if(res === 'success') {
+                    amount.innerText = data;
+                } else {
+                    alert('操作失误!');
+                }
+            }
+
+            button.addEventListener('click', (e) => {
+                let script = document.createElement('script');
+                script.src = 'http://localhost:8888/pay?callback=payMoney'
+                document.body.appendChild(script)
+                script.onload = function() {
+                    e.currentTarget.remove()
+                }
+                script.onerror = function() {
+                    alert('fail')
+                    e.currentTarget.remove()
+                }
+            })
+            // 从数据库获取初始的金钱
+            let script = document.createElement('script');
+            script.src = 'http://localhost:8888/getCurrentMoney?callback=initMoney'
+            document.body.appendChild(script)
+            script.onload = function() {
+                e.currentTarget.remove()
+            }
+        </script>
+    </body>
+</html>
