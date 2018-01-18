@@ -1,11 +1,9 @@
 .container {
-    /*width: 80vw;*/
-    /*height: 100vh;*/
     padding: 30px;
     margin: 0 auto;
     text-align: center;
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #61727B;
@@ -35,7 +33,6 @@ span.edit:hover {
 }
 
 span.btn {
-    /*width: 22px;*/
     border: 1px solid #BECCD3;
     display: inline-block;
     text-align: center;
